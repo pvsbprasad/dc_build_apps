@@ -1,0 +1,28 @@
+{
+  "name": "docsify-website",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "scripts": {
+    "convert": "docsify-to-pdf/.bin/cli.js",
+    "zip-folder": "zip -r docisfy-workshop-content.zip . -x './node_modules/*' -x './docsify-to-pdf/*' -x './.git/*' -x './gen/*' -x './mta_archives/*'",
+    "build": "npm run convert && npm run zip-folder"
+  },
+  "author": "",
+  "license": "ISC",
+  "docsifytopdf": {
+    "contents": [
+      "agenda-for-pdf.md"
+    ],
+    "cover": "_assets/files/cover.pdf",
+    "pathToPublic": "_assets/files/exercises.pdf",
+    "removeTemp": true,
+    "emulateMedia": "print",
+    "pdfOptions": {
+      "margin": {
+        "top": 50,
+        "bottom": 40
+      }
+    }
+  }
+}

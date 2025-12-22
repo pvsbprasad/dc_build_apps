@@ -1,0 +1,33 @@
+- **EXAMPLE WORKSHOP TITLE**
+- [Home](/)
+- [What workshop-tools can do](pages/30-workshop-tools-can/README.md)
+- [What workshop-tools can't do](pages/31-workshop-tools-cant/README.md)
+- [Workshop lifecycle](pages/40-w-lifecycle/README.md)
+- SAP BTP Configuration - Setup SAP Build Apps
+  - [Creating a workshop event](pages/14-workshop-requirements/)
+  - [repository-tools integration](pages/13-repo-tools-integration/README.md)
+  - [Systems and credentials](pages/16-credentials-systems/README.md)
+  - [Random passwords](pages/12-random-passwords/README.md)
+  - [Exercises and approvals](pages/15-exercises-approvals/README.md)
+- SAP BTP Configuration - Setup Translation Hub
+  - [Activate Translation Hub](pages/02-setup-translation-hub/README.md)
+  - [Add participants to a workshop](pages/41-add-participants/README.md)
+  - [Sending credentials](pages/42-send-credentials/README.md)
+  - [Marking attendance](pages/43-mark-attendance/README.md)
+  - [Approving exercises](pages/44-approving-exercises/README.md)
+  - [Closing the workshop](pages/45-closing-w/README.md)
+-  Publish content as a web with Docsify
+  - [Copying the template to a new repository](pages/01-setting-repository/README.md)
+  - [Project structure](pages/04-project-structure/README.md)
+  - [Writing the content](pages/05-writing-content/README.md)
+  - [Testing locally](pages/06-testing-locally/README.md)
+  - [Setting the title](pages/02-set-title/README.md)
+  - [Setting the agenda](pages/03-set-agenda/README.md)
+  - [Generating the PDF file](pages/08-generate-pdf/README.md)
+  - [Dynamic content (numbers, users, passwords)](pages/10-dynamic-content/README.md)
+  - [Deployment](pages/11-deployment/README.md)
+  - [Appendix: Other files](pages/07-other-files/README.md)
+- Best practices
+  - [Writing markdown](pages/20-writing-markdown/README.md)
+- Downloads:
+  - [Exercises in PDF](_assets/files/exercises.pdf ':ignore :target=_self')

@@ -1,0 +1,64 @@
+/* Define the font face */
+@font-face {
+    font-family: '72brand';
+    /* Choose a suitable font family name */
+    src: local('72brand'), url('../font/WOFF2/72Brand-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Apply the font to the entire document */
+  body {
+    font-family: '72brand', sans-serif;
+    /* Use the font-family name defined above */
+  }
+
+  .submitForm {
+    padding: 20px;
+    background-color: #fff;
+    width: auto;
+    text-align: center;
+  }
+
+  .submitForm input[type="file"],
+  .submitForm textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .submitForm button {
+    font-family: '72brand', sans-serif;
+    background-color: var(--theme-color);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submitForm button:hover {
+    background-color: #005bb5;
+  }
+
+
+
+  .markdown-section {
+    font-size: 20px
+  }
+
+  @media print {
+    h1 {
+      page-break-before: always
+    }
+  }
+
+  img {
+    max-width: 800px;
+    max-height: 700px;
+  }

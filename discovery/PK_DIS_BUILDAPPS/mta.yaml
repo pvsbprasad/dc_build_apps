@@ -1,0 +1,93 @@
+ID: docsify-website-workshop
+_schema-version: '3.2'
+version: 2.0.0
+
+modules:
+# Building and zipping MKDOCS app
+# Done manually now via docker
+  - name: docsify-website-workshop
+    type: staticfile
+    path: .
+    build-parameters:
+      builder: custom
+      build-result: .
+      commands:
+        - npm install
+        - npm run build
+      supported-platforms: []
+# Grabbing the zipped result from build
+  - name: docsify-website-workshop-ui-deployer
+    type: com.sap.application.content
+    path: .
+    requires:
+    - name: docsify-website-workshop-html5repo
+      parameters:
+        content-target: true
+    build-parameters:
+      build-result: gen/app
+      requires:
+      - artifacts:
+        - docisfy-workshop-content.zip
+        name: docsify-website-workshop
+        target-path: gen/app
+# Managed approuter destination configuration
+  - name: workshop-dest-content
+    type: com.sap.application.content
+    requires:
+    - name: workshop-auth
+      parameters:
+        service-key:
+          name: docsify-website-workshop-sk
+    - name: workshop-dest
+      parameters:
+        content-target: true
+    - name: docsify-website-workshop-html5repo
+      parameters:
+        service-key:
+          name: docsify-website-workshop-html5repo-sk
+    parameters:
+      content:
+        instance:
+          destinations:
+          - Authentication: OAuth2UserTokenExchange
+            Name: docsify-website-workshop-auth
+            ServiceInstanceName: workshop-auth
+            ServiceKeyName: docsify-website-workshop-sk
+            sap.cloud.service: workshop.docs
+          - Name: docsify-website-workshop-service-html5repo
+            ServiceInstanceName: docsify-website-workshop-html5repo
+            ServiceKeyName: docsify-website-workshop-html5repo-sk
+            sap.cloud.service: workshop.docs
+          existing_destinations_policy: update
+    build-parameters:
+      no-source: true
+
+resources:
+  - name: workshop-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+  - name: docsify-website-workshop-html5repo
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+  - name: workshop-dest
+    type: org.cloudfoundry.managed-service
+    parameters:
+      config:
+        HTML5Runtime_enabled: true
+        init_data:
+          instance:
+            destinations:
+            - Authentication: NoAuthentication
+              Name: ui5
+              ProxyType: Internet
+              Type: HTTP
+              URL: https://ui5.sap.com
+            existing_destinations_policy: update
+        version: 1.0.0
+      service: destination
+      service-plan: lite
+

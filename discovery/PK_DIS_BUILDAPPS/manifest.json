@@ -1,0 +1,16 @@
+{
+    "_version": "1.32.0",
+    "sap.app": {
+        "id": "docsify_example_workshop",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "Example workshop title",
+        "description": ""
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "workshop.docs"
+    }
+}
