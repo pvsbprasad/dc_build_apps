@@ -1,58 +1,93 @@
 # Designing the App
 
-1. Let's start with a clean canvas. Click on the element shown in the page and then click on the **x** icon to delete this element.  
-   ![](img/81image.png)
+1. Let's start with a clean canvas. Click on the element shown in the page and then click on the **bin** icon to delete this element.  
+ 
+ ![](im/7_1.png)
 
-2. Drag the container.  
-   ![](img/82image.png)
+2. Delete the other line item click on the **bin** icon to delete this element. 
 
-3. Drag the image into the container and set its width to **80px**.  
-   ![](img/83image.png)
+3. Drag the container.  
 
-4. Place the container and text field inside the same parent container, and set the text to **Document Translation**.  
-   ![](img/84image.png)
+ ![](im/8.png)
 
-5. Set the text name to **Document Translation**.  
-   ![](img/85image.png)
+4. Add an Container
 
-6. Go to the **Layout** tab and set the text alignment to **Center**.  
-   ![](img/86image.png)
+* Drag the **Container** component into the white space area.
+* Select the **Style** option.
+* Choose **Primary Card** as the style.
 
-7. Click on the image inside the container to upload a picture from your local folder and set it as the image.  
-   ![](img/87image.png)
+![](im/10.png)
 
-8. Click on the parent container, then select **Edit Styles** for the container.  
-   ![](img/88image.png)
+5. Add a Title to the Container
 
-9. Click on **New Palette**, enter the color code `#099DF1`, and then click **Save**.  
-   ![](img/89image.png)
+* Drag the **Title** component into the same container.
+* Select the **Style** option.
+* Choose **Page Secondary Heading – Primary Card**.
 
-10. On click, set the text size to **fontHeaderSize2**.  
-    ![](img/810image.png)
+![](im/11.png)
 
-11. Click on **APP variables as strings**.  
-    ![](img/811image.png)  
-    ![](img/812image.png)
+6. Select **Title** → **Layout** → set **Text Alignment** to **Center**.
 
-12. Go to the **Integrations** tab and click **Add Integration**.  
-    ![](img/813image.png)
+![](im/12.png)
+7. Select **Title** → **Properties** → update the **Content** field to **Language**.
 
-13. Click on **BTP destinations**.  
-    ![](img/814image.png)
+![](im/13.png)
 
-14. Click **Install Integration** as a **REST API**.  
-    ![](img/815image.png)
+8. Select **Container** → **Style** → click **Edit** under **Primary Card**.
 
-15. Uncheck the checkbox (remove any selection), and set the name as **Language**.  
-    ![](img/816image.png)
+![](im/14.png)
 
-16. Set the following:  
+9. Set the **Background Color** to **Emphasized**.
+
+![](im/15.png)
+
+![](im/16.png)
+
+10. Go to **Variables** → **App Variables** → click **+** → select **From Scratch**.  
+
+![](im/17.png)
+
+11. Enter the variable name as `SourceLanguage` and set the initial value to `en-US`.
+
+![](im/18.png)
+
+Similarly repeat the same steps for the remaining fields.
+    
+   | Field              | Type | Initial Value |
+   |--------------------|------|---------------|
+   | SourceLanguage     | Text | `en-US`       |
+   | SourcefileBase64   | Text | —             |
+   | Sourcepath         | Text | —             |
+   | TargetLanguage     | Text | `de-DE`       |
+   | pdfSourcefilename  | Text | —             |
+
+![](im/19.png)
+
+
+10. Go to the **Integrations** tab and click **Add Integration**.  
+
+   ![](im/20.png)
+
+11. Click on **BTP destinations**.  
+    ![](im/21.png)
+
+12. Select your **BTP destinations**.  
+   ![](im/22.png)
+
+15. Click **Install Integration** as a **REST API**.  
+   ![](im/23.png)
+
+16. Uncheck the checkbox (remove any selection), and set the name as **Language**.  
+   ![](im/24.png)
+
+17. Set the following:  
     - Relative path and query: `/api/v1/languages`  
     - Response mapper: `{records: response.data.languages, driverCode: response.status}`  
     - Run the test  
     - Auto-detect fields from response  
     - Save  
-    ![](img/817image.png)
+    
+    ![](im/25.png)
 
-17. Go to the **Variables** tab → select **Data Variables** → click **+** → add **Languages** as a **Collection** → then Save.  
-    ![](img/818image.png)
+18. Go to the **Variables** tab → select **Data Variables** → click **+** → add **Languages** as a **Collection** → then Save.  
+      ![](im/26.png)
