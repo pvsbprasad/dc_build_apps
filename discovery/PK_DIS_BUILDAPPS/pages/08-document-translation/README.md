@@ -173,9 +173,7 @@
 25. Select the **Open web preview**  
     ![](im/42.png)
 
-26. Select the **Download the PDF file** option from the page.  
-
-[Download the PDF file](pages/03-lcnc/06-hands-on-sapbuildapps/NewImg/HandOver.pdf ':ignore :target=_self')
+26. Please use any PDF file to translate
 
 27. Click the **Translate Document** button to start the document translation process.  
 
@@ -192,6 +190,7 @@ You can observe document is downloaded
 
 
   
+
 
 
 
