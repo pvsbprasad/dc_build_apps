@@ -173,7 +173,7 @@
 25. Select the **Open web preview**  
     ![](im/42.png)
 
-26. Select any [Download the pdf file]([im/HandOver.pdf](https://github.com/pvsbprasad/dc_build_apps/blob/main/discovery/PK_DIS_BUILDAPPS/pages/08-document-translation/im/HandOver.pdf) ':ignore :target=_self') the pdf file and click the **Translate Document** button 
+26. Select any [Download the pdf file](pages/08-document-translation/im/HandOver.pdf ':ignore :target=_self') the pdf file and click the **Translate Document** button  
 
 26. Click the **Upload** button, select the required **PDF file**, and click **Open**.
 ![](im/45.png)
@@ -186,6 +186,7 @@ You can observe document is downloaded
 
 
   
+
 
 
 
