@@ -1,4 +1,4 @@
-## 6. Create SAP BTP Destination
+## Create SAP BTP Destination
 
 Before using the SAP Build project, you must configure a destination in your SAP BTP subaccount.
 
@@ -39,5 +39,6 @@ Before using the SAP Build project, you must configure a destination in your SAP
 | `WebIDEEnabled`            | `true` |
 | `HTML5.DynamicDestination` | `true` |
 | `AppgyverEnabled`          | `true` |
+
 
 
