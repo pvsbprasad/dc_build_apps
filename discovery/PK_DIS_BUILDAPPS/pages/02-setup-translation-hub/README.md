@@ -145,11 +145,3 @@ Service bindings generate credentials required for applications to access the se
 * Download them for **application integration**
 
 
----
-
-## 10. Next Steps
-
-* Use the UI for **manual document translation**
-* Use service binding credentials for **API-based integrations**
-* Integrate with **SAP Build Apps**, **Node.js**, or **CAP applications**
-
