@@ -2,7 +2,6 @@
 
 Before using the SAP Build project, you must configure a destination in your SAP BTP subaccount.
 
-
 1. Go to your SAP BTP subaccount and navigate to **Connectivity → Destinations**, then click **Create Destination**.
 
 ![](img/image1.png)
@@ -39,6 +38,7 @@ Before using the SAP Build project, you must configure a destination in your SAP
 | `WebIDEEnabled`            | `true` |
 | `HTML5.DynamicDestination` | `true` |
 | `AppgyverEnabled`          | `true` |
+
 
 
 
