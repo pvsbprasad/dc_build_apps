@@ -2,7 +2,9 @@
 
 1. Go to the **Integrations** tab and click **Add Integration**.
 
-![](img/1.png)
+![](Img/1.png)
+
+
 
 2. In the **Integrations** tab, select **BTP Integration**.
 
@@ -44,4 +46,5 @@
    ![](img/8.png)
 
 ---
+
 
