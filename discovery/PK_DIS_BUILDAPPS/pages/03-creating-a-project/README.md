@@ -19,8 +19,9 @@ Under **Instances and Subscriptions**, locate your **SAP Build Apps** subscripti
 4. Click **Web & Mobile Application** card.  
    ![](img/75image.png)
 
-5. Enter Project name as **USER0${number}-Translation-Hub**. Click **Create**.  
+5. Enter Project name as **USER_Name**. Click **Create**.  
    ![](img/76image.png)
 
 6. You should see the **Build Apps landing screen**.  
+
    ![](img/77image.png)
