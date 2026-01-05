@@ -24,7 +24,7 @@
 
    ![](Img/6.png)
 
-7. In **Relative Path and Query**, enter the following path:
+7. In **Relative Path and Query**, enter the following path: here i had hard coded to '1000240' in real time it will fetch from URL.for this scenario please use any customer from your tenant
 
    ```
    /sap/c4c/api/v1/registered-product-service/registeredProducts?$filter=account/displayId eq '1000240'&$select=displayId,id,referenceProduct/displayId,referenceProduct/description
@@ -44,3 +44,4 @@
    ![](Img/8.png)
 
 ---
+
