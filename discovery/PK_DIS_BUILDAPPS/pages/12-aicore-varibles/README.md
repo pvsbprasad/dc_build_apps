@@ -12,17 +12,19 @@
 
    ![](img/3.png)
 
-    | Variable Name     | Type |
-    | ----------------- | ---- |
-    | CaseID            | Text |
-    | Category          | Text |
-    | Description       | Text |
-    | Imagepath         | Text |
-    | NotesUUID         | Text |
-    | Notes_Url         | Text |
-    | Priority          | Text |
-    | RegisteredProduct | Text |
-    | Sentiment         | Text |
-    | Subject           | Text |
-    | file_extension    | Text |
+    | Variable Name       | Type |
+|--------------------|------|
+| Account            | Text |
+| CaseID             | Text |
+| Category           | Text |
+| Description        | Text |
+| Imagepath          | Text |
+| NotesUUID          | Text |
+| Notes_Url          | Text |
+| Priority           | Text |
+| RegisteredProduct  | Text |
+| Sentiment          | Text |
+| Subject            | Text |
+| file_extension     | Text |
+
 
