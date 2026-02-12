@@ -1,4 +1,4 @@
-## Create SAP BTP Destination
+## Create SAP BTP Destination for AI Core
 
 Before using the SAP Build project, you must configure a destination in your SAP BTP subaccount.
 
@@ -45,6 +45,7 @@ Please copy all the properties, including the **Additional Properties**, to the 
 | `AppgyverEnabled`          | `true` |
 
 ---
+
 
 
 
