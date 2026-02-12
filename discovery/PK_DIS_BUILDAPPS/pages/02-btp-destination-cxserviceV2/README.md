@@ -1,4 +1,4 @@
-## Create SAP BTP Destination
+## Create SAP BTP Destination for Service Cloud v2
 
 Before using the SAP Build project, you must configure a destination in your SAP BTP subaccount.
 
@@ -19,7 +19,8 @@ Before using the SAP Build project, you must configure a destination in your SAP
 
 ![](img/image5.png)
 
-## SAP CX Destination Configuration
+## SAP CX Service Cloud V2 Destination Configuration
+Please copy all the properties, including the Additional Properties, to the destination configuration accordingly.
 
 | Property    | Value                                                                                |
 | ----------- | ------------------------------------------------------------------------------------ |
@@ -44,4 +45,5 @@ Before using the SAP Build project, you must configure a destination in your SAP
 
 
 ---
+
 
