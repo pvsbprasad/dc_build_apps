@@ -121,9 +121,38 @@
    * Click on **Input Field 2**
    * Go to the **Properties** tab
    * Set **Multiline Input** to **True**
+   * Set **layout height** to **150 px**
+
 
 
 ![](im/69.png)
+
+
+![](im/73.png)
+
+24. Drag the **Button** component onto the screen and update its **Label** property to “Translate”.
+
+![](im/75.png)
+
+25. Drag the **HTTP Destination Request** component onto the logic canvas. Then select the **HTTP Destination Request** and maintain the following values as shown below.
+
+
+| Parameter          | Value                                |
+| ------------------ | ------------------------------------ |
+| Destination*       | (Select your configured destination) |
+| HTTP Method*       | POST                                 |
+| Request Body Type* | JSON                                 |
+| Request Body*      | `{ "data": appVars.SourceText }`     |
+| Path               | `/api/v1/translation`                |
+| Header             | Content-Type: application/json       |
+| Header             | Accept: application/json             |
+
+
+![](im/76.png)
+
+26. Drag the **Set App Variable** component onto the logic canvas. Select the component and configure the following: set the **Variable Name** to `TargetText` and assign the **Assigned Value** as `outputs["HTTP destination request"].resBodyParsed.data`.
+
+![](im/78.png)
 
 24. Enter the text you want to translate into another language in the input field, and then click **Translate** button.
 
