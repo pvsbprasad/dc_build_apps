@@ -19,7 +19,8 @@ Before using the SAP Build project, you must configure a destination in your SAP
 
 ![](img/image4.png)
 
-## SAP AI Core Destination Configuration : Please copy all the properties, including the **Additional Properties**, to the destination configuration accordingly.
+## SAP AI Core Destination Configuration : 
+Please copy all the properties, including the **Additional Properties**, to the destination configuration accordingly.
 
 
 | Field                 | Value                       |
@@ -44,5 +45,6 @@ Before using the SAP Build project, you must configure a destination in your SAP
 | `AppgyverEnabled`          | `true` |
 
 ---
+
 
 
