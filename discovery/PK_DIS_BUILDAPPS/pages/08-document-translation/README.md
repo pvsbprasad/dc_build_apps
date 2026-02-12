@@ -180,7 +180,8 @@ Click on **Add Item** to create a new entry in the navigation menu.
 
 26. Use any sample PDF file for translation testing, or download a PDF from the URL provided below. Copy the file’s path URL and paste it into your browser; the file will download automatically.
 
-`https://raw.githubusercontent.com/pvsbprasad/dc_build_apps/main/discovery/PK_DIS_BUILDAPPS/pages/08-document-translation/im/HandOver.pdf
+[Download Sample PDF](https://raw.githubusercontent.com/pvsbprasad/dc_build_apps/main/discovery/PK_DIS_BUILDAPPS/pages/08-document-translation/im/HandOver.pdf)
+
 `
 
 27. Click the **Translate Document** button to start the document translation process.  
@@ -198,6 +199,7 @@ You can observe document is downloaded
 
 
   
+
 
 
 
