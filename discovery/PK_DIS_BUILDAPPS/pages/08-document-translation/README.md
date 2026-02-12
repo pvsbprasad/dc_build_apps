@@ -136,7 +136,7 @@
 | Destination          | `PK_Translation`                                                                                                                           |
 | HTTP Method          | `POST`                                                                                                                                     |
 | Request Body Type    | `json`                                                                                                                                     |
-| Path                 | `/api/v1/translation`                                                                                                                      |
+| Path -> formaule                 | `"/api/v1/translation"`                                                                                                                      |
 | Request Body Example | ```{    "contentType": "application/pdf",    "encoding": "base64",    "sourceLanguage": appVars.SourceLanguage,    "targetLanguage": appVars.TargetLanguage,    "model": "default",    "data": appVars.SourcefileBase64}``` |
 
 
@@ -153,19 +153,24 @@
    ![](im/40.png)
 
 
-22. **Set filename as:**  
+22. **Set filename as:** as formaule  
     ```js
     appVars.TargetLanguage + "_" + appVars.pdfSourcefilename + ".docx"
     ```  
     ![](im/40.png)
 
-23. Click on **Add Item** to create a new entry in the navigation menu.
+23. Click on **Add Settings** and select Navigation menu.
+Click on **Add Item** to create a new entry in the navigation menu.
    - Select the newly added line from the list of items.
    - Rename the tab name to **Document Translation**.
    - From the page selection dropdown, choose the page **Document Translation**.
    - Save the changes to apply the updated tab name and page mapping.
    
      ![](im/44.png)
+
+24. Select the **text field** and Bind the value to `pdfSourcefilename`  
+
+    ![](im/48.png)
 
 24. Now ready to test. Click on **Preview**  
      ![](im/41.png)
