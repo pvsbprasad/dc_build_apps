@@ -2,6 +2,8 @@
 
 Before using the SAP Build project, you must configure a destination in your SAP BTP subaccount.
 
+Similar to AI core.please create a destination for Service Cloud V2
+
 
 1. Go to your SAP BTP subaccount and navigate to **Connectivity → Destinations**, then click **Create Destination**.
 
@@ -45,5 +47,6 @@ Please copy all the properties, including the Additional Properties, to the dest
 
 
 ---
+
 
 
