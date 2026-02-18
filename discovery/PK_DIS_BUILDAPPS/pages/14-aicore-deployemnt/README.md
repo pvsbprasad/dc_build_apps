@@ -19,7 +19,8 @@
 6. Observe that the **Subject**, **Sentiment**, and **Description** fields are automatically populated.
    ![](img/6.png)
 
-7. Select the **Priority** and **Registered Product**.>It is manadtory to select in this **registered product**
+7. Select the **Priority** and **Registered Product**.  
+   **Note:** It is mandatory to select this option under the **Registered Product** section.
    ![](img/7.png)
 
 8. Click on **Create Case**.
@@ -29,4 +30,5 @@
    ![](img/9.png)
 
 ---
+
 
